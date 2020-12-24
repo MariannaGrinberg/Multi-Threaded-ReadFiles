@@ -17,7 +17,7 @@ public class main {
 			
 			String FileName = "Files/"+list[i] ; 
 			Threds worker = new Threds(FileName,l);
-            executor.execute(worker);
+            		executor.execute(worker);
             
 		}
 		 executor.shutdown();
@@ -45,6 +45,7 @@ public class main {
 				CommonWord = current; }
 			current=current.getNext();
 		}
+		
 		System.out.println(CommonWord);
 
 	}
@@ -60,6 +61,7 @@ public class main {
 			Node prev = null;
 
 			while (next != null) {
+				
 				if(current.getWord().compareToIgnoreCase(next.getWord()) > 0) {
 
 					Node temp = current;

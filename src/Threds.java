@@ -4,8 +4,8 @@ public class Threds implements Runnable{
 
 	// Attributes
 	
-	String fileName; 
-	LinkedList l = new LinkedList();
+	public String fileName; 
+	public LinkedList l = new LinkedList();
 	
 	// Constructor
 	
